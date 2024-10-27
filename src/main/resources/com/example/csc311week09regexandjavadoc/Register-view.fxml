@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.csc311week09regexandjavadoc.RegisterController">
+   <GridPane prefHeight="232.0" prefWidth="306.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0"
+             AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+      <columnConstraints>
+         <ColumnConstraints maxWidth="120.0" minWidth="101.0" prefWidth="120.0"/>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="180.0"/>
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="56.0" minHeight="21.0" prefHeight="40.0"/>
+         <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES"/>
+      </rowConstraints>
+      <Label prefHeight="20.0" prefWidth="96.0" text="First name ："/>
+      <Label prefHeight="20.0" prefWidth="96.0" text="Last name ：" GridPane.rowIndex="1"/>
+      <Label layoutX="10.0" layoutY="20.0" prefHeight="20.0" prefWidth="96.0" text="Eamil ：" GridPane.rowIndex="2"/>
+      <Label layoutX="10.0" layoutY="96.0" prefHeight="20.0" prefWidth="108.0" text="Date of Birth："
+             GridPane.rowIndex="3"/>
+      <Label layoutX="10.0" layoutY="134.0" prefHeight="20.0" prefWidth="96.0" text="Zip Code："
+             GridPane.rowIndex="4"/>
+      <TextField fx:id="lastName" promptText="2 - 25 characters" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+      <TextField fx:id="firstName" layoutX="106.0" layoutY="15.0" promptText="2 - 25 characters"
+                 GridPane.columnIndex="1"/>
+      <TextField fx:id="email" layoutX="106.0" layoutY="54.0" promptText="\@farmingdale.edu" GridPane.columnIndex="1"
+                 GridPane.rowIndex="2"/>
+      <TextField fx:id="dateOfBrith" layoutX="106.0" layoutY="91.0" promptText="MM/DD/YYYY " GridPane.columnIndex="1"
+                 GridPane.rowIndex="3"/>
+      <TextField fx:id="zipCode" layoutX="106.0" layoutY="129.0" promptText=" 5-digit numbers."
+                 GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+      <Button fx:id="addInfoButton" mnemonicParsing="false" onAction="#addInfo" prefHeight="30.0" prefWidth="96.0"
+              text="Add" GridPane.rowIndex="5"/>
+   </GridPane>
+</AnchorPane>
